@@ -41,8 +41,15 @@ Running it on Apify gives you **API access**, **scheduling**, **monitoring**, **
 
 ## How much does it cost to scrape Etsy?
 
-Etsy Search Scraper is **pay per result**: you pay for each unique listing delivered to your dataset, and nothing for duplicates, empty runs or listings it could not deliver. Turning on **Add full listing details** adds a second, separately priced charge for each listing that was enriched. The per-result rate falls as your Apify plan tier rises — see the **Pricing** tab for the current rates.
+Etsy Search Scraper is **pay per result**: you pay for each unique listing delivered to your dataset, and nothing for duplicates, empty runs or listings it could not deliver. Turning on **Add full listing details** adds a second, separately priced charge for each listing that was enriched. The price per result falls as your Apify plan tier rises.
 
+| Event | FREE | BRONZE | SILVER | GOLD and above |
+|---|---|---|---|---|
+| Search result (per listing) | $0.0020 | $0.0015 | $0.0012 | $0.0009 |
+| Full listing details (per enriched listing) | $0.0050 | $0.0040 | $0.0035 | $0.0030 |
+
+- **1,000 search results** cost **$2.00** on the FREE tier and **$0.90** on GOLD and above.
+- **1,000 results with full listing details** cost **$7.00** on FREE and **$3.90** on GOLD and above.
 - Test with `maxResults: 10` first to see exactly what a run returns.
 - Set a **maximum cost per run** in Apify's run options to cap spend; the Actor stops cleanly at the limit and keeps everything it delivered.
 
